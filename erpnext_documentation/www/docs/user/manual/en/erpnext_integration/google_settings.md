@@ -20,7 +20,7 @@ In order to allow a synchronization with Google Calendar, Google Contacts or Goo
 - In **API & Services > Credentials** create a new Credential and select **Create OAuth client ID**
 - Select Application Type **Web Application**
 - Add `https://{yoursite}` to Authorized JavaScript origins.
-- Add `https://{yoursite}?cmd=frappe.integrations.doctype.{integration_name}.{integration_name}.google_callback` as an authorized redirect URI.
+- Add `https://{yoursite}/?cmd=frappe.integrations.doctype.{integration_name}.{integration_name}.google_callback` as an authorized redirect URI.
   - You need to replace `integration_name` with one of the following:
      - Google Calendar: **google\_calendar**
      - Google Contacts: **google\_contacts**
